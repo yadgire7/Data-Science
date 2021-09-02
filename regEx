@@ -1,0 +1,37 @@
+Regular Expression:
+    It is a special text string for describing a search pattern.
+
+import re
+
+Meta Characters:
+    [] A set of characters
+    \ signals a special sequence (can aso be used to escape special sequence)
+    . any character (except newline character)
+    ^ starts with
+    $ ends with
+    * zero or more occurances
+    + one or more occurances
+    {} exactly the specified number of occurances
+    | either or
+    () capture and group
+    
+Special Sequences:
+    \A returns a match if the specified characters are at the beginning of the string
+    \b returns a match where the specifies characters are at the beginning or at the end of     the string
+    \B returns a match where the specifies characters are present, but NOT at the beginning (or at the end) of the word
+    \d returns a match where the string contains digits (numbers from 0-9)
+    \D returns a match where the string DOES NOT contain digits
+    \s returns a match where the string contains a white space character
+    \S returns a match where the string DOES NOT contain a white space
+    \w returns a match where the string contains any word characters (characters from a-z, digits from 0-9, and the underscore '_' character)
+    \W returns a match where the string does not contain a word match
+    \z returns a match if the specified characters are at the end of the string
+    
+    
+
+methods in re:
+    1. findall()
+    2. search()
+    3. split()
+    4. sub()
+    5. finditer()
